@@ -1,19 +1,21 @@
-.navbar-brand {
-    img {
-        box-shadow: 1px 1px 2px aqua;
-        transition: box-shadow 0.5s;
+nav {
+    .navbar-brand {
+        img {
+            box-shadow: 1px 1px 2px aqua;
+            transition: box-shadow 0.5s;
+        }
+    
+        img:hover {
+            box-shadow: 2px 2px 5px aqua;
+        }
     }
-
-    img:hover {
-        box-shadow: 2px 2px 5px aqua;
-    }
-}
-
-.nav-item {
-    a {
-        transition: all 0.5s;                
-    }
-    a:hover {
-        color:aqua;
+    
+    .nav-item {
+        a {
+            transition: all 0.5s;                
+        }
+        a:hover {
+            color:aqua;
+        }
     }
 }

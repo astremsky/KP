@@ -12,3 +12,6 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+.card-group .card .card-body .btn-secondary:hover {
+  color: aqua;
+}

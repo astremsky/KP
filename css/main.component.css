@@ -1,0 +1,17 @@
+#autohelp-carousel .carousel-indicators .active, #autohelp-carousel .carousel-indicators button:hover {
+  background-color: aqua;
+}
+
+.card-group .card .card-image-box {
+  width: 100%;
+  height: 100%;
+}
+.card-group .card .card-image-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card-group .card .card-body .btn-secondary:hover {
+  color: aqua;
+}

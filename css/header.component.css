@@ -1,0 +1,19 @@
+nav .navbar-brand img {
+  -webkit-box-shadow: 1px 1px 2px aqua;
+          box-shadow: 1px 1px 2px aqua;
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  transition: -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
+}
+nav .navbar-brand img:hover {
+  -webkit-box-shadow: 2px 2px 5px aqua;
+          box-shadow: 2px 2px 5px aqua;
+}
+nav .nav-item a {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+nav .nav-item a:hover {
+  color: aqua;
+}

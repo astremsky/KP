@@ -24,3 +24,26 @@
         }
     }
 }
+
+
+/*================ROW-SLIDER==============*/
+.partners-row .container-md .row-slider{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+    height: 165px;
+    column-gap: 20px;
+}
+
+.partners-row-slider .container-md .slider-image {
+    width: 90px;
+    height: 70px;
+}
+
+.partners-row-slider .container-md .slider-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

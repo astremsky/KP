@@ -1,0 +1,113 @@
+footer {
+    background-color: #313131;
+    padding: 100px 0 34px;
+}
+
+footer .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .left-block {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .left-block div {
+    padding-right: 30px;
+    width: 300px;
+}
+
+footer .footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+footer .footer-logo img {
+    width: 270px;
+    height: 80px;
+    margin: 0 10px 14px 0;
+}
+
+footer h3 {
+    color: #fff;
+}
+
+footer .footer-logo p, .footer-nav ul li a, .right-block  p, .footer-copyright {
+    color: rgba(255, 255, 255, 0.4);
+    text-decoration: none;
+}
+
+
+.footer-nav, .right-block {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: center;
+}
+
+.footer-nav ul {
+    padding-left: 0;
+}
+
+.footer-nav ul li {    
+    list-style-type: none;
+}
+
+.footer-nav ul li a {
+    position: relative;
+    text-indent: 0;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    transition: all 0.5s;
+}
+
+.footer-nav ul li a:hover {
+    color: #fff;
+}
+
+.footer-nav ul li a span {
+    width: 6px;
+    height: 6px;
+    border-right: 2px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+    margin-right: 10px;
+    transform: rotate(-45deg);
+}
+
+.footer-nav ul li a:hover span {
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+footer .left-block .footer-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 10px;
+}
+
+.right-block p a {
+    color: aqua;
+}
+
+footer .footer-copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+footer .footer-copyright a.nav-link {
+    color: #fff;
+}
+
+footer .footer-copyright a.nav-link:hover {
+    color: rgba(255, 255, 255, 0.4);
+}

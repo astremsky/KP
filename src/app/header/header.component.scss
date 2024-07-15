@@ -1,3 +1,6 @@
+.header-wrap {
+    background-color: #313131;
+}
 nav {
     .navbar-brand {
         img {
@@ -6,16 +9,21 @@ nav {
         }
     
         img:hover {
-            box-shadow: 2px 2px 5px aqua;
+            box-shadow: 2px 2px 5px ;
         }
     }
     
     .nav-item {
         a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 20px;
+            font-weight: 600;
             transition: all 0.5s;                
         }
         a:hover {
             color:aqua;
+            border-bottom: 2px solid aqua;
         }
     }
 }

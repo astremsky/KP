@@ -1,10 +1,10 @@
 .header-wrap {
-    background-color: #313131;
+    background-color: #1f1f1f;
 }
 nav {
     .navbar-brand {
         img {
-            box-shadow: 1px 1px 2px aqua;
+            box-shadow: 1px 1px 2px #1f1f1f;
             transition: box-shadow 0.5s;
         }
     
@@ -16,10 +16,10 @@ nav {
     .nav-item {
         a {
             color: #fff;
-            margin: 0 10px;
             font-size: 20px;
             font-weight: 600;
-            transition: all 0.5s;                
+            transition: all 0.5s;    
+            border-bottom: 2px solid #1f1f1f;            
         }
         a:hover {
             color:aqua;

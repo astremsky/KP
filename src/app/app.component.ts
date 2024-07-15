@@ -7,6 +7,7 @@ import { MainComponent } from './main/main.component';
 import { LogoboxComponent } from './logobox/logobox.component';
 import { AboutComponent } from './about/about.component';
 import { PartnersComponent } from './partners/partners.component';
+import { FeedbacksComponent } from './feedbacks/feedbacks.component';
 
 @Component({
   selector: 'app-root',
@@ -19,7 +20,8 @@ import { PartnersComponent } from './partners/partners.component';
     MainComponent,
     LogoboxComponent,
     AboutComponent,
-    PartnersComponent
+    PartnersComponent,
+    FeedbacksComponent
     ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

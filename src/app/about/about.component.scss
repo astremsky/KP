@@ -1,9 +1,65 @@
 .about-wrap {
     background-color: #1f1f1f;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
+.card-custom {
+    background-color: #1f1f1f !important;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease-in-out;
+}
 
-    .card-custom {
-        background-color: #1f1f1f !important;
-        color: #fff;
-    }
+.card-custom:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-body {
+    position: relative;
+    padding: 15px;
+    flex-grow: 1;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Приховує текст після 3 рядків */
+    -webkit-box-orient: vertical;
+    transition: -webkit-line-clamp 0.3s ease-in-out;
+    transition: line-clamp 0.3s ease-in-out;
+    max-height: calc(1.2em * 3); /* Висота трьох рядків тексту */
+    cursor: pointer;
+}
+
+.card-custom:hover .card-text {
+    -webkit-line-clamp: unset;
+    max-height: none;
+    white-space: normal;
+}
+
+.card {
+    height: 100%; /* Забезпечує однакову висоту карток */
+    overflow: hidden;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }

@@ -6,6 +6,7 @@ footer {
 
 footer .container-fluid {
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -43,7 +44,7 @@ footer .footer-logo p, .footer-nav ul li a, .right-block  p, .footer-copyright {
 }
 
 
-.footer-nav, .right-block {
+.footer-nav {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
@@ -90,6 +91,16 @@ footer .left-block .footer-nav {
     flex-direction: column;
     justify-content: center;
     row-gap: 10px;
+}
+
+.right-block {
+    display: flex;
+    row-gap: 30px;
+    justify-content: space-between;
+
+    .qr-code-block {
+        margin-right: 30px;
+    }
 }
 
 .right-block p a {

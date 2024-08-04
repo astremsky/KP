@@ -1,5 +1,5 @@
 footer {
-  background-color: #313131;
+  background-color: #1f1f1f;
   padding: 100px 0 34px;
 }
 
@@ -7,6 +7,9 @@ footer .container-fluid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -58,7 +61,7 @@ footer .footer-logo p, .footer-nav ul li a, .right-block p, .footer-copyright {
   text-decoration: none;
 }
 
-.footer-nav, .right-block {
+.footer-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -128,6 +131,19 @@ footer .left-block .footer-nav {
       -ms-flex-pack: center;
           justify-content: center;
   row-gap: 10px;
+}
+
+.right-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  row-gap: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.right-block .qr-code-block {
+  margin-right: 30px;
 }
 
 .right-block p a {

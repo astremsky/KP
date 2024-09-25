@@ -58,9 +58,6 @@
     }
 }
 
-
-
-
 /*================ROW-SLIDER==============*/
 .partners-row .container-md .row-slider{
     display: flex;
@@ -82,9 +79,6 @@
     height: 100%;
     object-fit: cover;
 }
-
-
-/*================ANIMATION-STYLES=========*/
 
 /*=========Стилі для слайдера===================*/
 
@@ -108,30 +102,3 @@ carousel-item.active {
     background-color: #383838;
     color: aliceblue;
 }
-
-// .card-custom:first-child {
-//     transform: translateX(-100px); /* Зліва */
-// }
-
-// .card-custom:first-child.active {
-//     opacity: 1;
-//     transform: translateX(0);
-// }
-
-// .card-custom:nth-child(2) {
-//     transform: translateY(100px); /* Знизу */
-// }
-
-// .card-custom:nth-child(2).active {
-//     opacity: 1;
-//     transform: translateY(0);
-// }
-
-// .card-custom:nth-child(3) {
-//     transform: translateX(100px); /* Справа */
-// }
-
-// .card-custom:nth-child(3).active {
-//     opacity: 1;
-//     transform: translateX(0);
-// }

@@ -4,11 +4,19 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  row-gap: 10px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.about-wrap div {
+  max-width: 450px;
+  min-width: 175px;
+}
+.about-wrap div .card-body {
+  padding: 0 4px 0;
 }
 
 .card-custom {
@@ -90,4 +98,12 @@
 .card:hover {
   -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .about-wrap {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }

@@ -103,6 +103,13 @@ footer .left-block .footer-nav {
     }
 }
 
+@media (max-width: 480px)  {
+    .right-block {
+        flex-direction: column;
+        margin: 10px;
+    }
+}
+
 .right-block p a {
     color: aqua;
 }

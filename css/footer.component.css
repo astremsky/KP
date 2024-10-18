@@ -146,6 +146,15 @@ footer .left-block .footer-nav {
   margin-right: 30px;
 }
 
+@media (max-width: 480px) {
+  .right-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 10px;
+  }
+}
 .right-block p a {
   color: aqua;
 }

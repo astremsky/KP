@@ -1,4 +1,11 @@
 @charset "UTF-8";
+.hero {
+  background-color: #383838;
+}
+
+#autohelp-carousel .carousel-item img {
+  min-height: 175px;
+}
 #autohelp-carousel .carousel-indicators .active, #autohelp-carousel .carousel-indicators button:hover {
   background-color: aqua;
 }
@@ -6,22 +13,46 @@
 .products-wrap {
   background-color: #1f1f1f;
 }
-.products-wrap .card-custom {
-  background-color: #1f1f1f !important;
-  color: #fff;
-}
 
-.card-group .card .card-image-box {
-  width: 100%;
-  height: 100%;
+/*===========CARDs==========*/
+.card-custom {
+  max-width: 720px;
+  min-width: 315px;
+  min-height: 100%;
 }
-.card-group .card .card-image-box img {
+.card-custom .row {
+  min-height: 100%;
+}
+.card-custom .card-image-box {
+  position: relative;
+}
+.card-custom .card-image-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.card-group .card .card-body .btn-secondary:hover {
+.card-custom .card-body {
+  min-height: 100%;
+  max-width: 720px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.card-custom .card-body .btn-secondary {
+  max-width: 250px;
+}
+.card-custom .card-body .btn-secondary:hover {
   color: aqua;
 }
 
@@ -57,7 +88,6 @@
      object-fit: cover;
 }
 
-/*================ANIMATION-STYLES=========*/
 /*=========Стилі для слайдера===================*/
 @-webkit-keyframes scale {
   0% {
@@ -82,54 +112,16 @@
 carousel-item.active {
   -webkit-animation-name: scale;
           animation-name: scale;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
 }
 
 /* Стилі для карток */
 .card-custom {
-  opacity: 0;
   -webkit-transition: opacity 0.6s ease, -webkit-transform 0.6s ease;
   transition: opacity 0.6s ease, -webkit-transform 0.6s ease;
   transition: opacity 0.6s ease, transform 0.6s ease;
   transition: opacity 0.6s ease, transform 0.6s ease, -webkit-transform 0.6s ease;
-}
-
-.card-custom:first-child {
-  -webkit-transform: translateX(-100px);
-      -ms-transform: translateX(-100px);
-          transform: translateX(-100px); /* Зліва */
-}
-
-.card-custom:first-child.active {
-  opacity: 1;
-  -webkit-transform: translateX(0);
-      -ms-transform: translateX(0);
-          transform: translateX(0);
-}
-
-.card-custom:nth-child(2) {
-  -webkit-transform: translateY(100px);
-      -ms-transform: translateY(100px);
-          transform: translateY(100px); /* Знизу */
-}
-
-.card-custom:nth-child(2).active {
-  opacity: 1;
-  -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-          transform: translateY(0);
-}
-
-.card-custom:nth-child(3) {
-  -webkit-transform: translateX(100px);
-      -ms-transform: translateX(100px);
-          transform: translateX(100px); /* Справа */
-}
-
-.card-custom:nth-child(3).active {
-  opacity: 1;
-  -webkit-transform: translateX(0);
-      -ms-transform: translateX(0);
-          transform: translateX(0);
+  background-color: #383838;
+  color: aliceblue;
 }

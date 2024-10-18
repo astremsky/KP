@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 declare var bootstrap: any;
 
 @Component({
-  selector: 'app-main',
-  standalone: true,
-  imports: [],
-  templateUrl: './main.component.html',
-  styleUrl: './main.component.scss'
+    selector: 'app-main',
+    standalone: true,
+    imports: [],
+    templateUrl: './main.component.html',
+    styleUrl: './main.component.scss'
 })
 export class MainComponent {
     openModal() {

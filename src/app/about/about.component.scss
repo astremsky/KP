@@ -1,8 +1,18 @@
 .about-wrap {
     background-color: #1f1f1f;
     display: flex;
+    row-gap: 10px;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
+
+    div {
+        max-width: 450px;
+        min-width: 175px;
+
+        .card-body {
+            padding: 0 4px 0;
+        }
+    }
 }
 
 .card-custom {
@@ -62,4 +72,10 @@
 
 .card:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .about-wrap {
+        justify-content: center;
+    }
 }

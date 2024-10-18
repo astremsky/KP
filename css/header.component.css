@@ -1,19 +1,32 @@
+.header-wrap {
+  background-color: #1f1f1f;
+}
+
 nav .navbar-brand img {
-  -webkit-box-shadow: 1px 1px 2px aqua;
-          box-shadow: 1px 1px 2px aqua;
+  -webkit-box-shadow: 1px 1px 2px #1f1f1f;
+          box-shadow: 1px 1px 2px #1f1f1f;
   -webkit-transition: -webkit-box-shadow 0.5s;
   transition: -webkit-box-shadow 0.5s;
   transition: box-shadow 0.5s;
   transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
 }
 nav .navbar-brand img:hover {
-  -webkit-box-shadow: 2px 2px 5px aqua;
-          box-shadow: 2px 2px 5px aqua;
+  -webkit-box-shadow: 2px 2px 5px;
+          box-shadow: 2px 2px 5px;
 }
 nav .nav-item a {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  border-bottom: 2px solid #1f1f1f;
 }
 nav .nav-item a:hover {
   color: aqua;
+  border-bottom: 2px solid aqua;
+}
+
+.defenders-logo {
+  background-color: rgba(255, 255, 255, 0.1);
 }
